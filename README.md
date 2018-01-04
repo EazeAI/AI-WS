@@ -8,6 +8,7 @@ AI-WS is a set of ready to use RESTful webservices implementing various AI scena
 
 ### List of Services
 - Natural Language Processing
--- Sentiment Analysis
+  - Text Analysis
+  - Sentiment Analysis
 - Computer Vision
--- 
+  - Image Processing
