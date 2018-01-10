@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # AI-WS
 #### Artificial Intelligence - Web Services
 ****
