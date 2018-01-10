@@ -1,0 +1,37 @@
+language: python
+
+python:
+  - 2.7
+  - 3.3
+  - 3.4
+  - 3.5
+  - 3.6
+
+env:
+  global:
+  - RANDOM_SEED=0
+  - PIPENV_NOSPIN=true
+  matrix:
+  - FLASK_VERSION=0.10.2
+  - FLASK_VERSION=0.11.2
+  - FLASK_VERSION=0.12.2
+
+before_install:
+  - pip install pipenv~=5.0
+
+install:
+  - make install
+
+script:
+  - make check
+  - make test
+
+after_success:
+  - pip install coveralls scrutinizer-ocular
+  - coveralls
+  - ocular
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
