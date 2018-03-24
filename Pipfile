@@ -9,7 +9,7 @@ Markdown = "*"
 [dev-packages]
 nose = "*"
 coverage = "~=3.7.1"
-"coverage.space" = "*"
+coverage-space = "*"
 flake8 = "~=2.1"
 mkdocs = "==0.12"
 docutils = "*"
